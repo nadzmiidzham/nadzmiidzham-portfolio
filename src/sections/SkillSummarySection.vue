@@ -12,8 +12,7 @@ const frameworkList = [
   { label: "NuxtJS", value: 8 },
   { label: "Laravel", value: 9 },
   { label: "Slim Framework", value: 9 },
-  { label: "Flutter", value: 6 },
-  { label: "Android Studio (Java / Kotlin)", value: 8 },
+  { label: "Flutter", value: 7 },
 ];
 
 const devopToolList = [
@@ -24,7 +23,7 @@ const devopToolList = [
 </script>
 
 <template>
-  <div class="py-3">
+  <div class="flex flex-col gap-10 py-3">
     <!-- Programming Language -->
     <div>
       <h1><b>Programming Language</b></h1>

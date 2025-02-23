@@ -12,14 +12,14 @@ const frameworkList = [
   { label: "NuxtJS", value: 8 },
   { label: "Laravel", value: 9 },
   { label: "Slim Framework", value: 9 },
-  { label: "Flutter", value: 5 },
-  { label: "Android Studio (Java / Kotlin)", value: 6 },
+  { label: "Flutter", value: 6 },
+  { label: "Android Studio (Java / Kotlin)", value: 8 },
 ];
 
 const devopToolList = [
-  { label: "Docker", value: 8 },
-  { label: "Gitlab CI/CD", value: 6 },
-  { label: "ArgoCD", value: 5 },
+  { label: "Docker", value: 9 },
+  { label: "Gitlab CI/CD", value: 8 },
+  { label: "ArgoCD", value: 6 },
 ];
 </script>
 

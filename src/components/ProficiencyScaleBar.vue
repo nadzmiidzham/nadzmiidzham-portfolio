@@ -1,16 +1,23 @@
 <script setup>
+import { computed } from "vue";
+
 const { label, value } = defineProps({
   label: {
     type: String,
     required: true,
   },
 
-  // value range = between 0-10
+  // value range
   value: {
     type: Number,
     default: 0,
-    validator: (v) => v >= 0 && v <= 10,
+    validator: (v) => v >= 0 && v <= maxValue,
   },
+});
+
+const maxValue = 10;
+const barValue = computed(() => {
+  return (value / maxValue) * 100;
 });
 </script>
 
@@ -20,7 +27,10 @@ const { label, value } = defineProps({
     <div
       class="h-3 overflow-hidden rounded-full bg-green-900 text-yellow-600 outline"
     >
-      <div :class="`h-3 w-${value}/10 rounded-full bg-yellow-500`"></div>
+      <div
+        :class="`h-3 rounded-full bg-yellow-500`"
+        :style="{ width: `${barValue}%` }"
+      ></div>
     </div>
   </div>
 </template>

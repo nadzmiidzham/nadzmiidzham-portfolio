@@ -6,8 +6,13 @@ import SkillSummarySection from "../sections/SkillSummarySection.vue";
 
 <template>
   <div class="flex flex-col gap-2">
+    <div class="m-auto"><Avatar /></div>
+    <div class="m-auto"><DownloadCVButton /></div>
+    <div class="mx-10"><SkillSummarySection /></div>
+  </div>
+  <!-- <div class="flex flex-col gap-2">
     <Avatar />
     <DownloadCVButton />
     <SkillSummarySection />
-  </div>
+  </div> -->
 </template>

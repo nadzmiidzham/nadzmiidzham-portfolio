@@ -1,12 +1,7 @@
 <script setup>
 import { computed } from "vue";
 
-const { label, value } = defineProps({
-  label: {
-    type: String,
-    required: true,
-  },
-
+const { value } = defineProps({
   // value range
   value: {
     type: Number,
@@ -23,7 +18,10 @@ const barValue = computed(() => {
 
 <template>
   <div>
-    <h1>{{ label }}</h1>
+    <div class="flex">
+      <slot name="icon"></slot>
+      <slot class="grow" name="label"></slot>
+    </div>
     <div
       class="h-3 overflow-hidden rounded-full bg-green-900 text-yellow-600 outline"
     >

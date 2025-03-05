@@ -1,6 +1,11 @@
+<script setup lang="ts">
+import InternshipSection from '../sections/InternshipSection.vue';
+
+</script>
+
 <template>
-  <!-- TODO: remove the top most div before deployment -->
-  <div class="bg-white">
-    <h1>Detail Section</h1>
+  <div class="px-3">
+    <h1 class="uppercase text-green-950"><b>Internship</b></h1>
+    <InternshipSection />
   </div>
 </template>

@@ -9,7 +9,7 @@ import TimeLineInfo from "../components/TimeLineInfo.vue";
       <template #label>Bachelor</template>
       <template #description>
         <h1><b>Bachelor in Computer Science (Hons.)</b></h1>
-        <h5>UiTM Shah Alam (Selangor, Malaysia)</h5>
+        <p class="ml-3">UiTM Shah Alam (Selangor, Malaysia)</p>
       </template>
     </TimeLineInfo>
     
@@ -18,7 +18,7 @@ import TimeLineInfo from "../components/TimeLineInfo.vue";
       <template #label>Diploma</template>
       <template #description>
         <h1><b>Diploma in Computer Science</b></h1>
-        <h5>UiTM Merbok (Kedah, Malaysia)</h5>
+        <p class="ml-3">UiTM Merbok (Kedah, Malaysia)</p>
       </template>
     </TimeLineInfo>
     
@@ -27,7 +27,7 @@ import TimeLineInfo from "../components/TimeLineInfo.vue";
       <template #label>O-Level</template>
       <template #description>
         <h1><b>Sijil Pelajaran Malaysia (SPM)</b></h1>
-        <h5>Royal Military College (Kuala Lumpur, Malaysia)</h5>
+        <p class="ml-3">Royal Military College (Kuala Lumpur, Malaysia)</p>
       </template>
     </TimeLineInfo>
   </div>

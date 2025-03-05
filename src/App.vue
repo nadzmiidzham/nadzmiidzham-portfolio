@@ -4,7 +4,7 @@ import SummarySectionLayout from "./layouts/SummarySectionLayout.vue";
 </script>
 
 <template>
-  <div class="flex flex-col gap-10">
+  <div class="flex flex-col">
     <SummarySectionLayout />
     <DetailSectionLayout />
   </div>

@@ -18,7 +18,7 @@ const frameworkList = [
 const devopToolList = [
   { label: "Docker", value: 9, iconPathList: ['images/docker-icon.svg'] },
   { label: "Gitlab CI/CD", value: 8, iconPathList: ['images/gitlab-icon.svg'] },
-  { label: "ArgoCD", value: 6, iconPathList: ['images/Argo CD.svg'] },
+  { label: "ArgoCD", value: 6, iconPathList: ['images/argocd-icon.svg'] },
 ];
 </script>
 

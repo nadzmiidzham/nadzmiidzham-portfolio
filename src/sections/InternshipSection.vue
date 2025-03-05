@@ -3,7 +3,7 @@ import TimeLineInfo from "../components/TimeLineInfo.vue";
 </script>
 
 <template>
-  <TimeLineInfo :showTimelineTrail="false">
+  <TimeLineInfo :isStartTime="true">
     <template #time>2017</template>
     <template #label>UNICEF</template>
     <template #description>

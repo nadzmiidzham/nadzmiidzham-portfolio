@@ -3,7 +3,7 @@ import TimeLineInfo from "../components/TimeLineInfo.vue";
 </script>
 
 <template>
-  <div class="flex flex-col gap-3">
+  <div class="flex flex-col">
     <TimeLineInfo>
       <template #time>2018</template>
       <template #label>Bachelor</template>
@@ -22,7 +22,7 @@ import TimeLineInfo from "../components/TimeLineInfo.vue";
       </template>
     </TimeLineInfo>
     
-    <TimeLineInfo :showTimelineTrail="false">
+    <TimeLineInfo :isStartTime="true">
       <template #time>2013</template>
       <template #label>O-Level</template>
       <template #description>

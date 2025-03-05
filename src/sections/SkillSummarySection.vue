@@ -2,35 +2,34 @@
 import ProficiencyScaleBar from "../components/ProficiencyScaleBar.vue";
 
 const programmingLanguageList = [
-  { label: "Javascript / Typescript", value: 9, iconPathList: ['images/icons8-javascript.svg','images/icons8-typescript.svg'] },
-  { label: "Python", value: 8, iconPathList: ['images/icons8-python.svg'] },
-  { label: "PHP", value: 9, iconPathList: ['images/icons8-python.svg'] },
-  { label: "Java / Kotlin", value: 8, iconPathList: ['images/icons8-java.svg'] },
+  { label: "Javascript / Typescript", value: 9, iconPathList: ['images/javascript-icon.svg','images/typescript-icon.svg'] },
+  { label: "Python", value: 8, iconPathList: ['images/python-icon.svg'] },
+  { label: "PHP", value: 9, iconPathList: ['images/php-icon.svg'] },
+  { label: "Java / Kotlin", value: 8, iconPathList: ['images/java-icon.svg', 'images/kotlin-icon.svg'] },
 ];
 
 const frameworkList = [
-  { label: "NestJS", value: 9, iconPathList: ['images/icons8-nestjs.svg'] },
-  { label: "NuxtJS", value: 8, iconPathList: ['images/icons8-nuxt-js.svg'] },
-  { label: "Laravel", value: 9, iconPathList: ['images/icons8-python.svg'] },
-  { label: "Slim Framework", value: 9, iconPathList: ['images/icons8-python.svg'] },
-  { label: "Flutter", value: 7, iconPathList: ['images/icons8-python.svg'] },
+  { label: "NestJS", value: 9, iconPathList: ['images/nestjs-icon.svg'] },
+  { label: "NuxtJS", value: 8, iconPathList: ['images/nuxtjs-icon.svg'] },
+  { label: "Laravel", value: 9, iconPathList: ['images/laravel-icon.svg'] },
+  { label: "Flutter", value: 7, iconPathList: ['images/flutter-icon.svg'] },
 ];
 
 const devopToolList = [
-  { label: "Docker", value: 9, iconPathList: ['images/icons8-python.svg'] },
-  { label: "Gitlab CI/CD", value: 8, iconPathList: ['images/icons8-python.svg'] },
-  { label: "ArgoCD", value: 6, iconPathList: ['images/icons8-python.svg'] },
+  { label: "Docker", value: 9, iconPathList: ['images/docker-icon.svg'] },
+  { label: "Gitlab CI/CD", value: 8, iconPathList: ['images/gitlab-icon.svg'] },
+  { label: "ArgoCD", value: 6, iconPathList: ['images/Argo CD.svg'] },
 ];
 </script>
 
 <template>
-  <div class="flex flex-col gap-10 py-3">
+  <div class="flex flex-col gap-2 bg-yellow-100 p-3 rounded-2xl">
     <!-- Programming Language -->
     <div>
       <h1><b>Programming Language</b></h1>
 
       <div v-for="item in programmingLanguageList">
-        <ProficiencyScaleBar :value="item.value">
+        <ProficiencyScaleBar :value="item.value" class="my-1">
           <template #icon>
             <img v-for="iconPath in item.iconPathList" :src="iconPath" class="w-6 h-6" />
           </template>
@@ -46,7 +45,7 @@ const devopToolList = [
       <h1><b>Framework</b></h1>
 
       <div v-for="item in frameworkList">
-        <ProficiencyScaleBar :value="item.value">
+        <ProficiencyScaleBar :value="item.value" class="my-1">
           <template #icon>
             <img v-for="iconPath in item.iconPathList" :src="iconPath" class="w-6 h-6" />
           </template>
@@ -62,7 +61,7 @@ const devopToolList = [
       <h1><b>DevOp Tool</b></h1>
 
       <div v-for="item in devopToolList">
-        <ProficiencyScaleBar :value="item.value">
+        <ProficiencyScaleBar :value="item.value" class="my-1">
           <template #icon>
             <img v-for="iconPath in item.iconPathList" :src="iconPath" class="w-6 h-6" />
           </template>

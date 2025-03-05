@@ -3,7 +3,7 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-} from '@headlessui/vue'
+} from '@headlessui/vue';
 import DownloadCVButton from "../components/DownloadCVButton.vue";
 import Avatar from "../components/Avatar.vue";
 import SkillSummarySection from "../sections/SkillSummarySection.vue";
@@ -13,9 +13,12 @@ import SkillSummarySection from "../sections/SkillSummarySection.vue";
   <div class="flex flex-col gap-2 my-3">
     <div class="mx-auto"><Avatar /></div>
     <div class="mx-3"><DownloadCVButton /></div>
-    
-    <Disclosure>
-      <DisclosureButton class="mx-3 rounded-2xl bg-yellow-400 py-2 px-3 text-center text-green-950 outline">
+
+    <Disclosure v-slot="{ open }">
+      <DisclosureButton v-if="open" class="mx-3 rounded-2xl bg-yellow-400 py-2 px-3 text-center text-green-950 outline">
+        <b>Skill Summary</b>
+      </DisclosureButton>
+      <DisclosureButton v-else class="mx-3 rounded-2xl bg-green-950 py-2 px-3 text-center text-white">
         <b>Skill Summary</b>
       </DisclosureButton>
 

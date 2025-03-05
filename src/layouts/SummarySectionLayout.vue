@@ -15,7 +15,7 @@ import SkillSummarySection from "../sections/SkillSummarySection.vue";
     <div class="mx-3"><DownloadCVButton /></div>
     
     <Disclosure>
-      <DisclosureButton class="mx-3 rounded-2xl bg-green-950 py-2 px-3 text-center text-white hover:bg-green-700 hover:text-yellow-300 hover:outline">
+      <DisclosureButton class="mx-3 rounded-2xl bg-yellow-400 py-2 px-3 text-center text-green-950 outline">
         <b>Skill Summary</b>
       </DisclosureButton>
 

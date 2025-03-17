@@ -14,7 +14,9 @@ import SummarySectionLayout from "./layouts/SummarySectionLayout.vue";
   <div class="hidden grid-cols-7 justify-items-center gap-4 py-7 md:grid">
     <div class="col-span-1"></div>
     <div class="col-span-3"><DetailSectionLayout /></div>
-    <div class="col-span-2"><SummarySectionLayout /></div>
+    <div class="sticky top-7 col-span-2 self-start">
+      <SummarySectionLayout />
+    </div>
     <div class="col-span-1"></div>
   </div>
 </template>

@@ -33,9 +33,24 @@ import SkillSummarySection from "../sections/SkillSummarySection.vue";
 
   <!-- desktop view -->
   <div class="my-3 hidden flex-col gap-3 md:flex">
-    <div class="mx-3 flex justify-center"><Avatar /></div>
-    <div class="mx-3"><DownloadCVButton /></div>
+    <div class="mx-3 flex justify-center">
+      <Avatar />
+    </div>
 
-    <div class="mx-3"><SkillSummarySection /></div>
+    <div class="mx-3">
+      <DownloadCVButton />
+    </div>
+
+    <div class="mx-auto">
+      <div class="mx-10 rounded-2xl bg-yellow-400 text-green-950 outline">
+        <h1 class="text-center uppercase">
+          <b>Skill Summary</b>
+        </h1>
+      </div>
+
+      <div class="py-3">
+        <SkillSummarySection />
+      </div>
+    </div>
   </div>
 </template>

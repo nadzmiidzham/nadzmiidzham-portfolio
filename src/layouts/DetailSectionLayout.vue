@@ -3,6 +3,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
 import InternshipSection from "../sections/InternshipSection.vue";
 import EducationSection from "../sections/EducationSection.vue";
 import ExperienceSection from "../sections/ExperienceSection.vue";
+import SkillSection from "../sections/SkillSection.vue";
 </script>
 
 <template>
@@ -129,6 +130,20 @@ import ExperienceSection from "../sections/ExperienceSection.vue";
       </div>
       <div class="py-3">
         <EducationSection />
+      </div>
+    </div>
+
+    <!-- skill section -->
+    <div class="px-3">
+      <div
+        class="mx-auto w-full rounded-2xl bg-yellow-400 px-3 py-2 text-green-950 outline"
+      >
+        <h1 class="text-center uppercase">
+          <b>Skill Detail</b>
+        </h1>
+      </div>
+      <div class="py-3">
+        <SkillSection />
       </div>
     </div>
   </div>

@@ -31,5 +31,11 @@ const { value } = defineProps({
         :style="{ left: `${(level / 10) * 100}%` }"
       ></div>
     </div>
+
+    <div class="mt-1 flex justify-between text-green-950">
+      <span class="bold">LEARNING</span>
+      <span class="bold">PROFICIENT</span>
+      <span class="bold">NATIVE</span>
+    </div>
   </div>
 </template>

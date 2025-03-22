@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import IconPillButton from "../components/IconPillButton.vue";
+import LanguageProficiencyScale from "../components/LanguageProficiencyScale.vue";
 
 const devOpList = [
   {
@@ -156,6 +157,19 @@ const skillList = [
   ...frameworkList,
   ...otherTool,
 ];
+
+const languageList = [
+  {
+    label: "Malay",
+    value: 9,
+    iconPathList: ["images/java-icon.svg"],
+  },
+  {
+    label: "English",
+    value: 7,
+    iconPathList: ["images/java-icon.svg"],
+  },
+];
 </script>
 
 <template>
@@ -166,5 +180,31 @@ const skillList = [
       :iconPath="skill.iconPath"
       :linkUrl="skill.linkUrl"
     />
+  </div>
+
+  <div class="mx-auto">
+    <div class="mx-20 my-3 rounded-2xl bg-yellow-400 text-green-950 outline">
+      <h1 class="text-center uppercase">
+        <b>Language</b>
+      </h1>
+    </div>
+
+    <div class="mx-7 rounded-md bg-yellow-200 p-3 outline outline-yellow-600">
+      <LanguageProficiencyScale
+        v-for="item in languageList"
+        :value="item.value"
+      >
+        <template #icon>
+          <img
+            v-for="iconPath in item.iconPathList"
+            :src="iconPath"
+            class="h-6 w-6"
+          />
+        </template>
+        <template #label>
+          <b class="uppercase">{{ item.label }}</b>
+        </template>
+      </LanguageProficiencyScale>
+    </div>
   </div>
 </template>

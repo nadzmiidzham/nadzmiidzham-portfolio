@@ -93,7 +93,7 @@ import SkillSection from "../sections/SkillSection.vue";
         class="mx-auto w-full rounded-2xl bg-yellow-400 px-3 py-2 text-green-950 outline"
       >
         <h1 class="text-center uppercase">
-          <b>Skill</b>
+          <b>Skill / Tool</b>
         </h1>
       </div>
       <div class="py-3">
@@ -152,7 +152,7 @@ import SkillSection from "../sections/SkillSection.vue";
         class="mx-auto w-full rounded-2xl bg-yellow-400 px-3 py-2 text-green-950 outline"
       >
         <h1 class="text-center uppercase">
-          <b>Skill</b>
+          <b>Skill / Tool</b>
         </h1>
       </div>
       <div class="py-3">

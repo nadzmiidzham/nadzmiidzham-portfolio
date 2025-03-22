@@ -86,10 +86,23 @@ import SkillSection from "../sections/SkillSection.vue";
         </DisclosurePanel>
       </Disclosure>
     </div>
+
+    <!-- skill section -->
+    <div class="px-3">
+      <div
+        class="mx-auto w-full rounded-2xl bg-yellow-400 px-3 py-2 text-green-950 outline"
+      >
+        <h1 class="text-center uppercase">
+          <b>Skill</b>
+        </h1>
+      </div>
+      <div class="py-3">
+        <SkillSection />
+      </div>
+    </div>
   </div>
 
   <!-- desktop view -->
-
   <div class="hidden flex-col gap-3 py-3 md:flex">
     <!-- experience section -->
     <div class="px-3">
@@ -139,7 +152,7 @@ import SkillSection from "../sections/SkillSection.vue";
         class="mx-auto w-full rounded-2xl bg-yellow-400 px-3 py-2 text-green-950 outline"
       >
         <h1 class="text-center uppercase">
-          <b>Skill Detail</b>
+          <b>Skill</b>
         </h1>
       </div>
       <div class="py-3">

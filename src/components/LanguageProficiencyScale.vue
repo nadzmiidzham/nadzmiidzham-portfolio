@@ -10,8 +10,8 @@ const { value } = defineProps({
 </script>
 
 <template>
-  <div class="my-1">
-    <div class="my-1 flex gap-1">
+  <div class="my-3">
+    <div class="mx-7 my-1 flex gap-1">
       <slot name="icon"></slot>
       <slot class="grow" name="label"></slot>
     </div>

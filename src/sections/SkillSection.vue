@@ -162,12 +162,12 @@ const languageList = [
   {
     label: "Malay",
     value: 9,
-    iconPathList: ["images/java-icon.svg"],
+    iconPathList: ["images/my-flag-icon.svg"],
   },
   {
     label: "English",
     value: 7,
-    iconPathList: ["images/java-icon.svg"],
+    iconPathList: ["images/us-flag-icon.svg"],
   },
 ];
 </script>

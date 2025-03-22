@@ -38,7 +38,7 @@ const devopToolList = [
       <h1><b>Programming Language</b></h1>
 
       <div v-for="item in programmingLanguageList">
-        <ProficiencyScaleBar :value="item.value" class="my-1">
+        <ProficiencyScaleBar :value="item.value">
           <template #icon>
             <img
               v-for="iconPath in item.iconPathList"
@@ -58,7 +58,7 @@ const devopToolList = [
       <h1><b>Framework</b></h1>
 
       <div v-for="item in frameworkList">
-        <ProficiencyScaleBar :value="item.value" class="my-1">
+        <ProficiencyScaleBar :value="item.value">
           <template #icon>
             <img
               v-for="iconPath in item.iconPathList"
@@ -78,7 +78,7 @@ const devopToolList = [
       <h1><b>DevOp Tool</b></h1>
 
       <div v-for="item in devopToolList">
-        <ProficiencyScaleBar :value="item.value" class="my-1">
+        <ProficiencyScaleBar :value="item.value">
           <template #icon>
             <img
               v-for="iconPath in item.iconPathList"
@@ -101,7 +101,7 @@ const devopToolList = [
       <h1><b>Programming Language</b></h1>
 
       <div v-for="item in programmingLanguageList" class="min-w-3xs">
-        <ProficiencyScaleBar :value="item.value" class="my-1">
+        <ProficiencyScaleBar :value="item.value">
           <template #icon>
             <img
               v-for="iconPath in item.iconPathList"
@@ -121,7 +121,7 @@ const devopToolList = [
       <h1><b>Framework</b></h1>
 
       <div v-for="item in frameworkList" class="min-w-3xs">
-        <ProficiencyScaleBar :value="item.value" class="my-1">
+        <ProficiencyScaleBar :value="item.value">
           <template #icon>
             <img
               v-for="iconPath in item.iconPathList"
@@ -141,7 +141,7 @@ const devopToolList = [
       <h1><b>DevOp Tool</b></h1>
 
       <div v-for="item in devopToolList" class="min-w-3xs">
-        <ProficiencyScaleBar :value="item.value" class="my-1">
+        <ProficiencyScaleBar :value="item.value">
           <template #icon>
             <img
               v-for="iconPath in item.iconPathList"

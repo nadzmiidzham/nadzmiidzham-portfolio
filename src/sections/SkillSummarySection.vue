@@ -9,24 +9,18 @@ const programmingLanguageList = [
   },
   { label: "Python", value: 8, iconPathList: ["images/python-icon.svg"] },
   { label: "PHP", value: 9, iconPathList: ["images/php-icon.svg"] },
-  {
-    label: "Java / Kotlin",
-    value: 8,
-    iconPathList: ["images/java-icon.svg", "images/kotlin-icon.svg"],
-  },
 ];
 
 const frameworkList = [
   { label: "NestJS", value: 9, iconPathList: ["images/nestjs-icon.svg"] },
   { label: "NuxtJS", value: 8, iconPathList: ["images/nuxtjs-icon.svg"] },
   { label: "Laravel", value: 9, iconPathList: ["images/laravel-icon.svg"] },
-  { label: "Flutter", value: 7, iconPathList: ["images/flutter-icon.svg"] },
 ];
 
 const devopToolList = [
   { label: "Docker", value: 9, iconPathList: ["images/docker-icon.svg"] },
-  { label: "Gitlab CI/CD", value: 8, iconPathList: ["images/gitlab-icon.svg"] },
-  { label: "ArgoCD", value: 6, iconPathList: ["images/argocd-icon.svg"] },
+  { label: "Gitlab CI/CD", value: 7, iconPathList: ["images/gitlab-icon.svg"] },
+  { label: "ArgoCD", value: 4, iconPathList: ["images/argocd-icon.svg"] },
 ];
 </script>
 

@@ -8,6 +8,11 @@ const devOpList = [
     linkUrl: "https://www.docker.com/",
   },
   {
+    label: "Kubernetes",
+    iconPath: "/images/kubernetes-icon.svg",
+    linkUrl: "https://kubernetes.io/",
+  },
+  {
     label: "Gitlab CI/CD",
     iconPath: "/images/gitlab-icon.svg",
     linkUrl: "https://docs.gitlab.com/ci/",
@@ -17,22 +22,57 @@ const devOpList = [
     iconPath: "/images/argocd-icon.svg",
     linkUrl: "https://argoproj.github.io/cd/",
   },
+  {
+    label: "AWS",
+    iconPath: "/images/aws-icon.svg",
+    linkUrl: "https://aws.amazon.com/",
+  },
+  {
+    label: "GCP",
+    iconPath: "/images/gcp-icon.svg",
+    linkUrl: "https://cloud.google.com/",
+  },
+  {
+    label: "Heroku",
+    iconPath: "/images/heroku-icon.svg",
+    linkUrl: "https://www.heroku.com/",
+  },
+  {
+    label: "Datadog",
+    iconPath: "/images/datadog-icon.svg",
+    linkUrl: "https://www.datadoghq.com/",
+  },
+  {
+    label: "Github",
+    iconPath: "/images/github-icon.svg",
+    linkUrl: "https://github.com/",
+  },
+  {
+    label: "Gitlab",
+    iconPath: "/images/gitlab-icon.svg",
+    linkUrl: "https://gitlab.com/",
+  },
+  {
+    label: "MessageBird",
+    iconPath: "/images/messagebird-icon.svg",
+    linkUrl: "https://developers.messagebird.com/",
+  },
+  {
+    label: "MailGun",
+    iconPath: "/images/mailgun-icon.svg",
+    linkUrl: "https://www.mailgun.com/",
+  },
 ];
 const programmingLanguageList = [
-  {
-    label: "Java",
-    iconPath: "/images/java-icon.svg",
-    linkUrl: "https://www.java.com/en/",
-  },
   {
     label: "Javascript",
     iconPath: "/images/javascript-icon.svg",
     linkUrl: "https://www.javascript.com/",
   },
   {
-    label: "Kotlin",
-    iconPath: "/images/kotlin-icon.svg",
-    linkUrl: "https://kotlinlang.org/",
+    label: "Typescript",
+    iconPath: "/images/typescript-icon.svg",
+    linkUrl: "https://www.typescriptlang.org/",
   },
   {
     label: "PHP",
@@ -45,21 +85,21 @@ const programmingLanguageList = [
     linkUrl: "https://www.python.org/",
   },
   {
-    label: "Typescript",
-    iconPath: "/images/typescript-icon.svg",
-    linkUrl: "https://www.typescriptlang.org/",
+    label: "Java",
+    iconPath: "/images/java-icon.svg",
+    linkUrl: "https://www.java.com/en/",
+  },
+  {
+    label: "Kotlin",
+    iconPath: "/images/kotlin-icon.svg",
+    linkUrl: "https://kotlinlang.org/",
   },
 ];
 const frameworkList = [
   {
-    label: "Flutter",
-    iconPath: "/images/flutter-icon.svg",
-    linkUrl: "https://flutter.dev/",
-  },
-  {
-    label: "Laravel",
-    iconPath: "/images/laravel-icon.svg",
-    linkUrl: "https://laravel.com/",
+    label: "Node.js",
+    iconPath: "/images/nodejs-icon.svg",
+    linkUrl: "https://nodejs.org/en",
   },
   {
     label: "NestJs",
@@ -71,9 +111,51 @@ const frameworkList = [
     iconPath: "/images/nuxtjs-icon.svg",
     linkUrl: "https://nuxt.com/",
   },
+  {
+    label: "Flutter",
+    iconPath: "/images/flutter-icon.svg",
+    linkUrl: "https://flutter.dev/",
+  },
+  {
+    label: "Laravel",
+    iconPath: "/images/laravel-icon.svg",
+    linkUrl: "https://laravel.com/",
+  },
+  {
+    label: "Codeigniter",
+    iconPath: "/images/codeigniter-icon.svg",
+    linkUrl: "https://codeigniter.com/",
+  },
+  {
+    label: "Qt Framework (Python)",
+    iconPath: "/images/qt-icon.svg",
+    linkUrl: "https://doc.qt.io/qtforpython-6/",
+  },
+];
+const otherTool = [
+  {
+    label: "Vite",
+    iconPath: "/vite.svg",
+    linkUrl: "https://vite.dev/",
+  },
+  {
+    label: "Linux",
+    iconPath: "/images/linux-icon.svg",
+    linkUrl: "https://www.linux.org/",
+  },
+  {
+    label: "Arch Linux",
+    iconPath: "/images/arch-linux-icon.svg",
+    linkUrl: "https://archlinux.org/",
+  },
 ];
 
-const skillList = [...devOpList, ...programmingLanguageList, ...frameworkList];
+const skillList = [
+  ...devOpList,
+  ...programmingLanguageList,
+  ...frameworkList,
+  ...otherTool,
+];
 </script>
 
 <template>

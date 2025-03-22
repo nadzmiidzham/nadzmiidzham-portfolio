@@ -21,7 +21,7 @@
     <div
       class="rounded-2xl bg-green-900 px-3 py-2 text-center text-yellow-500 outline hover:bg-yellow-500 hover:text-green-950"
     >
-      <b>Download my CV</b>
+      <b>Download CV</b>
     </div>
   </a>
 </template>

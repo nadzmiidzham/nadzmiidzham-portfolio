@@ -183,13 +183,15 @@ const languageList = [
   </div>
 
   <div class="mx-auto">
-    <div class="mx-20 my-3 rounded-2xl bg-yellow-400 text-green-950 outline">
-      <h1 class="text-center uppercase">
-        <b>Language</b>
-      </h1>
-    </div>
+    <div
+      class="mx-7 my-2 rounded-md bg-yellow-200 px-7 py-1 outline outline-yellow-600"
+    >
+      <div class="mx-20 my-3 rounded-2xl bg-yellow-400 text-green-950 outline">
+        <h1 class="text-center uppercase">
+          <b>Language Proficiency</b>
+        </h1>
+      </div>
 
-    <div class="mx-7 rounded-md bg-yellow-200 p-3 outline outline-yellow-600">
       <LanguageProficiencyScale
         v-for="item in languageList"
         :value="item.value"

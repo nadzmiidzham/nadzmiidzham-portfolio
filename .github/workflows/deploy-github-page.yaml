@@ -24,6 +24,7 @@ jobs:
           name: production-artifact
           path: ./dist
   deploy:
+    needs: build
     name: Deploy
     runs-on: ubuntu-latest
     steps:

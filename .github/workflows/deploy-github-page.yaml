@@ -1,0 +1,30 @@
+name: Deploy Github Page
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+      # - name: Enable pnpm
+      #   run: corepack enable pnpm
+      - name: Install Dependencies
+        run: pnpm install
+      - name: Build Project
+        run: pnpm run build
+      - name: Upload production-ready artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: production-artifact
+          path: ./dist
+  # deploy:
+  #   name: Deploy
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     -
